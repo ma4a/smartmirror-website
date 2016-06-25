@@ -1,0 +1,28 @@
+{
+  "name": "smartmirror-website",
+  "version": "1.0.0",
+  "description": "SmartMirror module to show a customizable website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthias Schmidt",
+  "dependencies": {
+    "log": "^1.4.0"
+  },
+  "devDependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  },
+  "smartmirror": {
+    "settings": {
+      "url": {
+        "type": "string",
+        "desc": "website URL to display"
+      }
+    },
+    "size": [
+      "4x4"
+    ]
+  }
+}
