@@ -19,6 +19,10 @@
       "url": {
         "type": "string",
         "desc": "website URL to display"
+      },
+      "reloadtimer": {
+        "type": "number",
+        "desc": "reload after x milliseconds (0 to disable)"
       }
     },
     "size": [

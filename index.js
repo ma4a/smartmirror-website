@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 
   let params = {
     "url": "http://example.org",
-    "reloadtimer": 0 // Time in milliseconds
+    "reloadtimer": 5000 // Time in milliseconds (0 to disable)
   };
   params.data = true;
   let widget = {};
