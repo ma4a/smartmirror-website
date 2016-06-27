@@ -9,4 +9,15 @@ html
 
   body
     iframe(id='sm-iframe', class="sm-filter", width='460', height='460', scrolling='no', frameborder='no', src=data.url)
-   
+       
+    script.        
+      reloadIFrame();
+      
+      function reloadIFrame() {
+        document.getElementById('sm-iframe').src = document.getElementById('sm-iframe').src;
+      }
+    
+    if ( data.reloadtimer > 0 )
+      script.
+        var reloadtimer = #{data.reloadtimer};
+        setInterval(reloadIFrame, reloadtimer);

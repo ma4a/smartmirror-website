@@ -15,7 +15,8 @@ app.get('/', function (req, res) {
   pckg = JSON.parse(pckg);
 
   let params = {
-    "url": "http://example.org"
+    "url": "http://example.org",
+    "reloadtimer": 0 // Time in milliseconds
   };
   params.data = true;
   let widget = {};
